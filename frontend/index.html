@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A practice bank with a C++ object-oriented backend and a web frontend: clients, transactions, currency exchange, users and audit logs. Educational simulation.">
+    <meta name="theme-color" content="#0d4a43">
+    <title>Bank System Simulation</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230d4a43' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 10 12 4l9 6M5 10v8M9 10v8M15 10v8M19 10v8M3 21h18'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="root"></div>
+    <noscript><p style="padding:24px;font-family:system-ui">This app needs JavaScript to run.</p></noscript>
+
+    <script src="config.js"></script>
+    <!-- lib -->
+    <script src="js/lib/api.js"></script>
+    <script src="js/lib/clsDate.js"></script>
+    <script src="js/lib/clsInputValidate.js"></script>
+    <!-- models: views of what the C++ server sends -->
+    <script src="js/models/clsPerson.js"></script>
+    <script src="js/models/clsBankClient.js"></script>
+    <script src="js/models/clsUser.js"></script>
+    <script src="js/models/clsCurrency.js"></script>
+    <script src="js/core/Global.js"></script>
+    <!-- ui -->
+    <script src="js/ui/ui.js"></script>
+    <script src="js/ui/clsScreen.js"></script>
+    <script src="js/ui/router.js"></script>
+    <!-- screens -->
+    <script src="js/screens/clsMainScreen.js"></script>
+    <script src="js/screens/clsDataScreen.js"></script>
+    <script src="js/screens/User/clsLoginScreen.js"></script>
+    <script src="js/screens/User/clsLoginRegisterScreen.js"></script>
+    <script src="js/screens/User/clsUserForm.js"></script>
+    <script src="js/screens/User/clsUsersListScreen.js"></script>
+    <script src="js/screens/User/clsAddNewUserScreen.js"></script>
+    <script src="js/screens/User/clsUpdateUserScreen.js"></script>
+    <script src="js/screens/User/clsDeleteUserScreen.js"></script>
+    <script src="js/screens/User/clsFindUserScreen.js"></script>
+    <script src="js/screens/Client/clsClientForm.js"></script>
+    <script src="js/screens/Client/clsClientListScreen.js"></script>
+    <script src="js/screens/Client/clsAddNewClientScreen.js"></script>
+    <script src="js/screens/Client/clsUpdateClientScreen.js"></script>
+    <script src="js/screens/Client/clsDeleteClientScreen.js"></script>
+    <script src="js/screens/Client/clsFindClientScreen.js"></script>
+    <script src="js/screens/Client/clsDepositScreen.js"></script>
+    <script src="js/screens/Client/clsWithdrawScreen.js"></script>
+    <script src="js/screens/Client/clsTransferScreen.js"></script>
+    <script src="js/screens/Client/clsTotalBalancesScreen.js"></script>
+    <script src="js/screens/Client/clsTransferLogScreen.js"></script>
+    <script src="js/screens/Currencies/clsCurrenciesListScreen.js"></script>
+    <script src="js/screens/Currencies/clsFindCurrencyScreen.js"></script>
+    <script src="js/screens/Currencies/clsUpdateCurrencyRateScreen.js"></script>
+    <script src="js/screens/Currencies/clscurrencyCalculatorScreen.js"></script>
+    <!-- entry point -->
+    <script src="js/app.js"></script>
+</body>
+</html>
