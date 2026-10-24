@@ -30,6 +30,58 @@ The program is split in two, the way real applications are:
 
 ---
 
+## 📸 Screenshots
+
+### Sign in & overview
+
+![Sign in](Screenshots/LogIn.png)
+
+![Overview](Screenshots/overview.png)
+
+### Clients
+
+![Client list](Screenshots/ClientList.png)
+
+![Add client](Screenshots/AddClient.png)
+
+![Update client](Screenshots/UpdateClient.png)
+
+![Find client](Screenshots/FindClient.png)
+
+### Transactions
+
+![Deposit](Screenshots/Deposit.png)
+
+![Receipt](Screenshots/receipt.png)
+
+![Withdraw](Screenshots/Withdraw.png)
+
+![Transfer](Screenshots/Transfer.png)
+
+![Total balances](Screenshots/TotalBalances.png)
+
+![Transfer log](Screenshots/TransferLog.png)
+
+### Currency exchange
+
+![Currency rates](Screenshots/CurrencyRates.png)
+
+![Find currency](Screenshots/FindCurrency.png)
+
+![Update rate](Screenshots/UpdateRate.png)
+
+![Currency calculator](Screenshots/CurrencyCalculator.png)
+
+### Administration
+
+![Users](Screenshots/Users.png)
+
+![Login register](Screenshots/LoginResgister.png)
+
+![Data files](Screenshots/DataFiles.png)
+
+---
+
 ## 🖥️ Why This Edition Exists
 
 The original program runs in a black terminal: numbered menus, text prompts and plain-text tables. It works, but every step is typed blind and every mistake means starting the question again.
@@ -84,14 +136,13 @@ The server keeps the same record files as the console version, with the same nam
 - **Dynamic Permissions:** Each user has specific access rights (Admin/User). Permissions are bitwise (1, 2, 4, 8, etc.) and checked by the server on every request
 - **Login Tracking:** Every successful login is recorded with a timestamp and stored in `LoginRecord.text`
 - **3-Trial Lock:** Three wrong attempts lock sign-in for that user name from that computer for 30 seconds, with a live countdown
-  ![Login](Screenshots/Screenshot 1448-05-13 at 7.35.01 AM.png)
-  ![Login](Screenshots/Screenshot 1448-05-13 at 7.38.05 AM.png)
+
 ### 👥 2. Client & User Management
 
 - **Client Operations:** Full CRUD (Add, Delete, Update, Find) with encrypted storage
 - **User Operations:** Complete management of system users and their security levels, with a checkbox permission picker
 - **Permissions Display:** The overview page shows which screens you can open, and the sidebar marks locked ones with a padlock
-  ![Login](Screenshots/Screenshot 1448-05-13 at 7.38.22 AM.png)
+
 ### 💰 3. Banking & Transactions
 
 - **Balance Management:** Deposit, Withdraw, and Total Balances (with the total written in words)
@@ -210,6 +261,7 @@ Bank-system-simulation-OOP/
 │   │   └── app.js                    # Starts the app
 │   └── tests/ui_smoke.py             # 57 browser checks
 │
+├── Screenshots/                      # Pictures of every screen (used by this README)
 ├── tools/make_seed_header.py         # Regenerates SeedData.h from the sample data
 ├── Makefile                          # make / make run / make test
 └── README.md
@@ -245,6 +297,13 @@ Bank-system-simulation-OOP/
 | `User2` | `3456` | Full access |
 | `User3`, `User4`, `User6` | `3456` | Full access |
 | `User1`, `User5` | `3456` | Limited (Manage users + Login register) |
+
+### 🍎 macOS
+
+1. Open **Terminal** and run `xcode-select --install` once (installs the compiler; skip if it says it is already installed).
+2. Go to the project folder (type `cd `, drag the folder into the window, press Enter).
+3. Run `make run` and wait until it prints `listening : http://127.0.0.1:8080/`. Keep the window open.
+4. Open <http://localhost:8080> in your browser. Press `Ctrl + C` in Terminal to stop the server.
 
 ### 🪟 Windows with Visual Studio
 
