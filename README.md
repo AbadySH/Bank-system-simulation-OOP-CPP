@@ -52,11 +52,11 @@ The program is split in two, the way real applications are:
 
 ![Deposit](Screenshots/Deposit.png)
 
-![Receipt](Screenshots/receipt.png)
-
 ![Withdraw](Screenshots/Withdraw.png)
 
 ![Transfer](Screenshots/Transfer.png)
+
+![Receipt](Screenshots/receipt.png)
 
 ![Total balances](Screenshots/TotalBalances.png)
 
