@@ -84,13 +84,14 @@ The server keeps the same record files as the console version, with the same nam
 - **Dynamic Permissions:** Each user has specific access rights (Admin/User). Permissions are bitwise (1, 2, 4, 8, etc.) and checked by the server on every request
 - **Login Tracking:** Every successful login is recorded with a timestamp and stored in `LoginRecord.text`
 - **3-Trial Lock:** Three wrong attempts lock sign-in for that user name from that computer for 30 seconds, with a live countdown
-
+  ![Login](Screenshots/Screenshot 1448-05-13 at 7.35.01 AM.png)
+  ![Login](Screenshots/Screenshot 1448-05-13 at 7.38.05 AM.png)
 ### 👥 2. Client & User Management
 
 - **Client Operations:** Full CRUD (Add, Delete, Update, Find) with encrypted storage
 - **User Operations:** Complete management of system users and their security levels, with a checkbox permission picker
 - **Permissions Display:** The overview page shows which screens you can open, and the sidebar marks locked ones with a padlock
-
+  ![Login](Screenshots/Screenshot 1448-05-13 at 7.38.22 AM.png)
 ### 💰 3. Banking & Transactions
 
 - **Balance Management:** Deposit, Withdraw, and Total Balances (with the total written in words)
